@@ -842,8 +842,6 @@ func typeNamePrefix(name string) (prefix string) {
 			prefix += "Caret"
 		case '%':
 			prefix += "Percent"
-		case '_':
-			prefix += "Underscore"
 		default:
 			// Prepend "N" to schemas starting with a number
 			if prefix == "" && unicode.IsDigit(r) {
